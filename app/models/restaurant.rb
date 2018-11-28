@@ -26,7 +26,7 @@ class Restaurant
     #instance method
     #must go through reviews
     #my_reviews = Review.all.select {|review| review if review.restaurant == self}
-    my_customers = self.reviews.select {|review| review.customer}
+    my_customers = reviews.map {|review| review.customer}
     my_customers.uniq
 
     #right now it returns the review, not the customer
