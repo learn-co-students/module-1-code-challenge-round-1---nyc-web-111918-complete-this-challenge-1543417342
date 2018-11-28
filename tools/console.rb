@@ -19,7 +19,7 @@ r3 = Restaurant.new("Sushi 4 Life")
 
 # Reviews
 rc1 = Review.new(r1,c1,5,"Yum")
-rc2 = Review.new(r1,c2,4,"Such pizza. Wow.")
+rc2 = Review.new(r2,c1,4,"Such pizza. Wow.")
 rc3 = Review.new(r3,c3,2,"My life")
 
 

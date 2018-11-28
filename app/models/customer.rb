@@ -51,7 +51,19 @@ class Customer
 
 
   def add_review(restaurant,content,rating)
-    # reviews.
+    Review.new(restaurant,self,content,rating)
+  end
+
+  def num_reviews
+    reviews.length
+  end
+
+  def restaurants
+    all = []
+    reviews.each{|a_review| all << a_review.restaurant_name}
+    # binding.pry
+    all.uniq!
+    all
   end
 
 end
