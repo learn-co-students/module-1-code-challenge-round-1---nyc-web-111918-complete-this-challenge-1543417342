@@ -67,8 +67,10 @@ class Restaurant
     #end
 
     #could try sorting by content length
-    reviews.sort_by{|review| review.content.length}[-1]
+    #reviews.sort_by{|review| review.content.length}[-1]
 
+    #another option that works!
+    reviews.max_by{|review| review.content.length}
 
 
   end
